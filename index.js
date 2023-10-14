@@ -65,7 +65,7 @@ mongoose
   })
 
   .then(() => console.log("Carrot Cake is deleted."))
-  .catch((error) => console.error(`Recipe can't be deleted:`, error))
+  .catch((error) => console.error(`There is an error`, error))
   .finally(
     mongoose.connection.close(() => {
       console.log(
